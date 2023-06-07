@@ -1,24 +1,9 @@
-import sys
-sys.path.insert(0, '/project/jcreminslab/emersond_projects/lib5c/lib5c/algorithms')
-
 import argparse
-#from qnorm import _rank_data
-#from qnorm import _average_rows
-#from qnorm import _sub_in_normed_val
-#from qnorm import qnorm
 from qnorm_fast import qnorm_reducesort
 from qnorm_fast import qnorm
-#from qnorm import qnorm_counts_superdict
 import scipy.sparse
 import numpy as np
-#from lib5c.util.parallelization import parallelize_regions
-#from lib5c.util.counts_superdict import counts_superdict_to_matrix
-#from lib5c.util.counts import unflatten_counts_from_list,\
-#    flatten_regional_counts, unflatten_regional_counts
 import os
-
-
-#qnorm_parallel = parallelize_regions(qnorm)
 
 def main():
 
