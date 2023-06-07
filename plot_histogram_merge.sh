@@ -1,0 +1,23 @@
+
+bsub -o plot_histogram_merge.o -e plot_histogram_merge.e python plot_histogram_merge.py 0min_MERGED_all_ICED_chr8_10000 25min_MERGED_all_ICED_chr8_10000 60min_MERGED_all_ICED_chr8_10000 120min_MERGED_all_ICED_chr8_10000 240min_MERGED_all_ICED_chr8_10000 chr8 10000 kr 0.5 1.2
+
+bsub -o plot_histogram_merge.o -e plot_histogram_merge.e python plot_histogram_merge.py 0min_MERGED_all_ICED_chr8_10000 25min_MERGED_all_ICED_chr8_10000 60min_MERGED_all_ICED_chr8_10000 120min_MERGED_all_ICED_chr8_10000 240min_MERGED_all_ICED_chr8_10000 chr8 10000 kr_qnorm 0.5 1.2
+
+bsub -o plot_histogram_merge.o -e plot_histogram_merge.e python plot_histogram_merge.py 0min_MERGED_all_ICED_chr8_10000 25min_MERGED_all_ICED_chr8_10000 60min_MERGED_all_ICED_chr8_10000 120min_MERGED_all_ICED_chr8_10000 240min_MERGED_all_ICED_chr8_10000 chr8 10000 raw 0.5 1.2
+
+
+
+bsub -o plot_histogram_merge.o -e plot_histogram_merge.e python plot_histogram_merge.py 0min_MERGED_all_ICED_chr8_10000 25min_MERGED_all_ICED_chr8_10000 60min_MERGED_all_ICED_chr8_10000 120min_MERGED_all_ICED_chr8_10000 240min_MERGED_all_ICED_chr8_10000 chr8 10000 kr 0.5 0.65
+
+bsub -o plot_histogram_merge.o -e plot_histogram_merge.e python plot_histogram_merge.py 0min_MERGED_all_ICED_chr8_10000 25min_MERGED_all_ICED_chr8_10000 60min_MERGED_all_ICED_chr8_10000 120min_MERGED_all_ICED_chr8_10000 240min_MERGED_all_ICED_chr8_10000 chr8 10000 kr_qnorm 0.5 0.65
+
+bsub -o plot_histogram_merge.o -e plot_histogram_merge.e python plot_histogram_merge.py 0min_MERGED_all_ICED_chr8_10000 25min_MERGED_all_ICED_chr8_10000 60min_MERGED_all_ICED_chr8_10000 120min_MERGED_all_ICED_chr8_10000 240min_MERGED_all_ICED_chr8_10000 chr8 10000 raw 0.5 0.65
+
+
+
+bsub -o plot_histogram_merge.o -e plot_histogram_merge.e python plot_histogram_merge.py 0min_MERGED_all_ICED_chr1_10000 25min_MERGED_all_ICED_chr1_10000 60min_MERGED_all_ICED_chr1_10000 120min_MERGED_all_ICED_chr1_10000 240min_MERGED_all_ICED_chr1_10000 chr1 10000 kr_qnorm 0.5 0.65
+
+bsub -o plot_histogram_merge.o -e plot_histogram_merge.e python plot_histogram_merge.py 0min_MERGED_all_ICED_chr1_10000 25min_MERGED_all_ICED_chr1_10000 60min_MERGED_all_ICED_chr1_10000 120min_MERGED_all_ICED_chr1_10000 240min_MERGED_all_ICED_chr1_10000 chr1 10000 kr 0.5 0.65
+
+bsub -o plot_histogram_merge.o -e plot_histogram_merge.e python plot_histogram_merge.py 0min_MERGED_all_ICED_chr1_10000 25min_MERGED_all_ICED_chr1_10000 60min_MERGED_all_ICED_chr1_10000 120min_MERGED_all_ICED_chr1_10000 240min_MERGED_all_ICED_chr1_10000 chr1 10000 raw 0.5 0.65
+
