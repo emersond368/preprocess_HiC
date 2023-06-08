@@ -3,11 +3,11 @@ import numpy as np
 import scipy.stats as stats
 import multiprocessing
 
-def qnorm(data):
+def qnorm(data,tie='min'):
 
     #not nan safe
     data[np.isnan(data)] = 0
-    ranks = [stats.rankdata(data[:, i], method='min')
+    ranks = [stats.rankdata(data[:, i], method=tie)
              for i in range(data.shape[1])]
     workspace = np.array([np.sort(data[:, i])
                           for i in range(data.shape[1])], dtype=float).T
@@ -16,11 +16,11 @@ def qnorm(data):
         workspace[:, i] = averages[ranks[i] - 1]
     return workspace
 
-def qnorm_reducesort(data):
+def qnorm_reducesort(data,tie='min'):
 
     #not nan safe
     data[np.isnan(data)] = 0
-    ranks = [stats.rankdata(data[:, i], method='min')
+    ranks = [stats.rankdata(data[:, i], method=tie)
              for i in range(data.shape[1])]
 
     workspace = np.zeros(data.shape)

@@ -59,6 +59,7 @@ def main():
     merge_240min_coo_coord = zip(merge_240min.row,merge_240min.col)
 
 
+    #collect total (row,col) coordinates with values found across all replicates
     coordinates = list(set(merge_0min_coo_coord).union(merge_25min_coo_coord,merge_60min_coo_coord,merge_120min_coo_coord,merge_240min_coo_coord))
     coordinates = np.array(coordinates) 
     
@@ -70,7 +71,8 @@ def main():
     merge_120min_csr = merge_120min.tocsr()
     merge_240min_csr = merge_240min.tocsr()
 
-
+    
+    #store values per replicate at corresponding sorted coordinate (rows = total_pixels, cols = replicates)   
     ext_data_rep[:,0] = merge_0min_csr[coordinates[:,0],coordinates[:,1]]
     ext_data_rep[:,1] = merge_25min_csr[coordinates[:,0],coordinates[:,1]]
     ext_data_rep[:,2] = merge_60min_csr[coordinates[:,0],coordinates[:,1]]
@@ -81,12 +83,8 @@ def main():
 
     np.set_printoptions(suppress=True) 
 
-    #ext_data_rep[ext_data_rep < args.threshold] = np.nan
-    #test_row_values = np.where((ext_data_rep < 0.5).all(axis=1) | (np.isnan(ext_data_rep)).all(axis=1))
-
-    #convert nans to zero for nan safety
+    #convert nans to zero for nan safety (avoid affecting rank sorting for qnorming)
     ext_data_rep[np.isnan(ext_data_rep)] = 0 
-    #test_row_removal = np.where((ext_data_rep < 0.5).all(axis=1) | (np.isnan(ext_data_rep)).all(axis=1))
 
     #remove all rows <= threshold percent of nonzeros in row 
     row_removal = np.where(np.count_nonzero(ext_data_rep, axis=1) <= args.threshold*ext_data_rep.shape[1])
@@ -102,11 +100,10 @@ def main():
 
 
     ref_index = None
-    tie='lowest'
+    tie='min'  #lowest rank
  
     # qnorm matrices
-    qnormed_matrices = qnorm_reducesort(ext_data_rep)
-    #qnormed_matrices[np.isnan(ext_data_rep)] = np.nan
+    qnormed_matrices = qnorm_reducesort(ext_data_rep,tie=tie)
     qnormed_matrices[~np.isfinite(qnormed_matrices)] = np.nan
 
 
@@ -124,6 +121,7 @@ def main():
     qnorm_merge_240min_triu = scipy.sparse.coo_matrix((qnormed_matrices[:,4],(rows,cols)),shape=merge_240min._shape).tocsr()    
 
 
+    #print out  matrix
     scipy.sparse.save_npz(args.merge_0min[:-4] + "_qnormed_merge_allcond_" + str(args.threshold) + '_' + str(args.resolution) + '_0min_'  + args.chr + "_below0.5.npz",qnorm_merge_0min_triu)
     scipy.sparse.save_npz(args.merge_25min[:-4] + "_qnormed_merge_allcond_" + str(args.threshold) + '_' + str(args.resolution) + '_25min_' + args.chr + "_below0.5.npz",qnorm_merge_25min_triu)
     scipy.sparse.save_npz(args.merge_60min[:-4] + "_qnormed_merge_allcond_" + str(args.threshold) + '_' +  str(args.resolution) + '_60min_' + args.chr + "_below0.5.npz",qnorm_merge_60min_triu)
