@@ -1,0 +1,50 @@
+bsub -M 20000 -o make_chr_npz_HFFc62.5.o -e make_chr_npz_HFFc62.5.e python make_chr_select_resolution_npz.py HFFc62.5.mcool   chr1 10000
+bsub -M 20000 -o make_chr_npz_HFFc62.5.o -e make_chr_npz_HFFc62.5.e python make_chr_select_resolution_npz.py HFFc62.5.mcool   chr2 10000
+bsub -M 20000 -o make_chr_npz_HFFc62.5.o -e make_chr_npz_HFFc62.5.e python make_chr_select_resolution_npz.py HFFc62.5.mcool   chr3 10000
+bsub -M 20000 -o make_chr_npz_HFFc62.5.o -e make_chr_npz_HFFc62.5.e python make_chr_select_resolution_npz.py HFFc62.5.mcool   chr4 10000
+bsub -M 20000 -o make_chr_npz_HFFc62.5.o -e make_chr_npz_HFFc62.5.e python make_chr_select_resolution_npz.py HFFc62.5.mcool   chr5 10000
+bsub -M 20000 -o make_chr_npz_HFFc62.5.o -e make_chr_npz_HFFc62.5.e python make_chr_select_resolution_npz.py HFFc62.5.mcool   chr6 10000
+bsub -M 20000 -o make_chr_npz_HFFc62.5.o -e make_chr_npz_HFFc62.5.e python make_chr_select_resolution_npz.py HFFc62.5.mcool   chr7 10000
+bsub -M 20000 -o make_chr_npz_HFFc62.5.o -e make_chr_npz_HFFc62.5.e python make_chr_select_resolution_npz.py HFFc62.5.mcool   chr8 10000
+bsub -M 20000 -o make_chr_npz_HFFc62.5.o -e make_chr_npz_HFFc62.5.e python make_chr_select_resolution_npz.py HFFc62.5.mcool   chr9 10000
+bsub -M 20000 -o make_chr_npz_HFFc62.5.o -e make_chr_npz_HFFc62.5.e python make_chr_select_resolution_npz.py HFFc62.5.mcool   chr10 10000
+bsub -M 20000 -o make_chr_npz_HFFc62.5.o -e make_chr_npz_HFFc62.5.e python make_chr_select_resolution_npz.py HFFc62.5.mcool   chr11 10000
+bsub -M 20000 -o make_chr_npz_HFFc62.5.o -e make_chr_npz_HFFc62.5.e python make_chr_select_resolution_npz.py HFFc62.5.mcool   chr12 10000
+bsub -M 20000 -o make_chr_npz_HFFc62.5.o -e make_chr_npz_HFFc62.5.e python make_chr_select_resolution_npz.py HFFc62.5.mcool   chr13 10000
+bsub -M 20000 -o make_chr_npz_HFFc62.5.o -e make_chr_npz_HFFc62.5.e python make_chr_select_resolution_npz.py HFFc62.5.mcool   chr14 10000
+bsub -M 20000 -o make_chr_npz_HFFc62.5.o -e make_chr_npz_HFFc62.5.e python make_chr_select_resolution_npz.py HFFc62.5.mcool   chr15 10000
+bsub -M 20000 -o make_chr_npz_HFFc62.5.o -e make_chr_npz_HFFc62.5.e python make_chr_select_resolution_npz.py HFFc62.5.mcool   chr16 10000
+bsub -M 20000 -o make_chr_npz_HFFc62.5.o -e make_chr_npz_HFFc62.5.e python make_chr_select_resolution_npz.py HFFc62.5.mcool   chr17 10000
+bsub -M 20000 -o make_chr_npz_HFFc62.5.o -e make_chr_npz_HFFc62.5.e python make_chr_select_resolution_npz.py HFFc62.5.mcool   chr18 10000
+bsub -M 20000 -o make_chr_npz_HFFc62.5.o -e make_chr_npz_HFFc62.5.e python make_chr_select_resolution_npz.py HFFc62.5.mcool   chr19 10000
+bsub -M 20000 -o make_chr_npz_HFFc62.5.o -e make_chr_npz_HFFc62.5.e python make_chr_select_resolution_npz.py HFFc62.5.mcool   chr20 10000
+bsub -M 20000 -o make_chr_npz_HFFc62.5.o -e make_chr_npz_HFFc62.5.e python make_chr_select_resolution_npz.py HFFc62.5.mcool   chr21 10000
+bsub -M 20000 -o make_chr_npz_HFFc62.5.o -e make_chr_npz_HFFc62.5.e python make_chr_select_resolution_npz.py HFFc62.5.mcool   chr22 10000
+bsub -M 20000 -o make_chr_npz_HFFc62.5.o -e make_chr_npz_HFFc62.5.e python make_chr_select_resolution_npz.py HFFc62.5.mcool   chrX 10000
+
+
+
+bsub -M 20000 -o make_chr_npz_HFFc62.5.o -e make_chr_npz_HFFc62.5.e python make_chr_select_resolution_npz.py HFFc62.5.mcool   chr1 25000
+bsub -M 20000 -o make_chr_npz_HFFc62.5.o -e make_chr_npz_HFFc62.5.e python make_chr_select_resolution_npz.py HFFc62.5.mcool   chr2 25000
+bsub -M 20000 -o make_chr_npz_HFFc62.5.o -e make_chr_npz_HFFc62.5.e python make_chr_select_resolution_npz.py HFFc62.5.mcool   chr3 25000
+bsub -M 20000 -o make_chr_npz_HFFc62.5.o -e make_chr_npz_HFFc62.5.e python make_chr_select_resolution_npz.py HFFc62.5.mcool   chr4 25000
+bsub -M 20000 -o make_chr_npz_HFFc62.5.o -e make_chr_npz_HFFc62.5.e python make_chr_select_resolution_npz.py HFFc62.5.mcool   chr5 25000
+bsub -M 20000 -o make_chr_npz_HFFc62.5.o -e make_chr_npz_HFFc62.5.e python make_chr_select_resolution_npz.py HFFc62.5.mcool   chr6 25000
+bsub -M 20000 -o make_chr_npz_HFFc62.5.o -e make_chr_npz_HFFc62.5.e python make_chr_select_resolution_npz.py HFFc62.5.mcool   chr7 25000
+bsub -M 20000 -o make_chr_npz_HFFc62.5.o -e make_chr_npz_HFFc62.5.e python make_chr_select_resolution_npz.py HFFc62.5.mcool   chr8 25000
+bsub -M 20000 -o make_chr_npz_HFFc62.5.o -e make_chr_npz_HFFc62.5.e python make_chr_select_resolution_npz.py HFFc62.5.mcool   chr9 25000
+bsub -M 20000 -o make_chr_npz_HFFc62.5.o -e make_chr_npz_HFFc62.5.e python make_chr_select_resolution_npz.py HFFc62.5.mcool   chr10 25000
+bsub -M 20000 -o make_chr_npz_HFFc62.5.o -e make_chr_npz_HFFc62.5.e python make_chr_select_resolution_npz.py HFFc62.5.mcool   chr11 25000
+bsub -M 20000 -o make_chr_npz_HFFc62.5.o -e make_chr_npz_HFFc62.5.e python make_chr_select_resolution_npz.py HFFc62.5.mcool   chr12 25000
+bsub -M 20000 -o make_chr_npz_HFFc62.5.o -e make_chr_npz_HFFc62.5.e python make_chr_select_resolution_npz.py HFFc62.5.mcool   chr13 25000
+bsub -M 20000 -o make_chr_npz_HFFc62.5.o -e make_chr_npz_HFFc62.5.e python make_chr_select_resolution_npz.py HFFc62.5.mcool   chr14 25000
+bsub -M 20000 -o make_chr_npz_HFFc62.5.o -e make_chr_npz_HFFc62.5.e python make_chr_select_resolution_npz.py HFFc62.5.mcool   chr15 25000
+bsub -M 20000 -o make_chr_npz_HFFc62.5.o -e make_chr_npz_HFFc62.5.e python make_chr_select_resolution_npz.py HFFc62.5.mcool   chr16 25000
+bsub -M 20000 -o make_chr_npz_HFFc62.5.o -e make_chr_npz_HFFc62.5.e python make_chr_select_resolution_npz.py HFFc62.5.mcool   chr17 25000
+bsub -M 20000 -o make_chr_npz_HFFc62.5.o -e make_chr_npz_HFFc62.5.e python make_chr_select_resolution_npz.py HFFc62.5.mcool   chr18 25000
+bsub -M 20000 -o make_chr_npz_HFFc62.5.o -e make_chr_npz_HFFc62.5.e python make_chr_select_resolution_npz.py HFFc62.5.mcool   chr19 25000
+bsub -M 20000 -o make_chr_npz_HFFc62.5.o -e make_chr_npz_HFFc62.5.e python make_chr_select_resolution_npz.py HFFc62.5.mcool   chr20 25000
+bsub -M 20000 -o make_chr_npz_HFFc62.5.o -e make_chr_npz_HFFc62.5.e python make_chr_select_resolution_npz.py HFFc62.5.mcool   chr21 25000
+bsub -M 20000 -o make_chr_npz_HFFc62.5.o -e make_chr_npz_HFFc62.5.e python make_chr_select_resolution_npz.py HFFc62.5.mcool   chr22 25000
+bsub -M 20000 -o make_chr_npz_HFFc62.5.o -e make_chr_npz_HFFc62.5.e python make_chr_select_resolution_npz.py HFFc62.5.mcool   chrX 25000
+
